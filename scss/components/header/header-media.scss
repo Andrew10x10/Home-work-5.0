@@ -1,0 +1,104 @@
+.header{
+  &__media-menu-btn{
+    display: none;
+  }
+  .burger {
+    font-size: 20px;
+    font-weight: $font-weight-semi-bold;
+    display: inline-block;
+    width: 140px;
+    height: 35px;
+    text-align: center;
+  }
+  .burger:hover,
+  .burger:active{
+    color:$secondary-accent-color;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px $box-shadow-1,-6px -6px 12px #ffffff;
+    background-color: $button-bg-1;
+    border: $border-sm solid #999999;
+
+  }
+
+  $media-header: 875px;
+
+  @media (min-width: $media-header) {
+  [for="media-menu-btn"]{
+    display: none;
+  }
+    .hidden-desktop{
+      display: none;
+    }
+  }
+  @media (max-width: $media-header ) {
+    .container-lg {
+      max-width: 576px;
+    }
+      & {
+        position: relative;
+        min-height: $header-height;
+        max-height: $header-height;
+      }
+
+      &__social-cta {
+        display: none;
+      }
+
+      &__navigation {
+        nav {
+          display: none;
+          position: absolute;
+          top: $header-height;
+          width: 100%;
+          left: 0;
+          background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+
+          ul {
+            flex-direction: column;
+            gap: 15px;
+          }
+
+          a {
+            display: block;
+            padding: 5px 0;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 22px;
+
+            &:hover {
+              background: linear-gradient(10deg, #EAF0FF 0%, #F6F9FF 100%);
+              border-left: $border-sm solid $secondary-accent-color;
+              border-right: $border-sm solid $secondary-accent-color;
+            }
+          }
+        }
+      }
+
+      &__media-menu-btn {
+        &:checked {
+          & + nav {
+            display: initial;
+          }
+        }
+      }
+    }
+
+
+  @media (max-width: 576px) {
+    .container-lg {
+      max-width: 320px;
+      }
+    .row{
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__social {
+      &-icons{
+        ul{
+          gap: 10px;
+        }
+      }
+    }
+    }
+
+}

@@ -1,4 +1,42 @@
-.container{
-  max-width: $container-header-width;
+body{
+  font-family: $main-font;
+  font-weight: $font-weight-regular;
+  font-size: $font-md;
+}
+.container-lg,
+.container-md{
   padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container-lg{
+  max-width: $container-lg-width;
+}
+.container-md{
+  max-width: $container-md-width;
+}
+.row{
+  display: flex;
+  align-items: center;
+}
+.col{
+  width: 100%;
+}
+.d-flex{
+  display: flex;
+}
+a{
+  color: $accent-color;
+  text-decoration: none;
+}
+.unstyled{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.justify-content-end{
+  justify-content: flex-end;
+}
+.align-items-center{
+  align-items: center;
 }
