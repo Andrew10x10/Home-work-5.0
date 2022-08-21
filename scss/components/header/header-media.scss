@@ -14,7 +14,7 @@
   .burger:active{
     color:$secondary-accent-color;
     border-radius: 15px;
-    box-shadow: 6px 6px 12px $box-shadow-1,-6px -6px 12px #ffffff;
+    box-shadow: 6px 6px 12px $box-shadow-1,-6px -6px 12px $white;
     background-color: $button-bg-1;
     border: $border-sm solid #999999;
 

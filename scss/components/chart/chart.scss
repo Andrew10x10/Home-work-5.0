@@ -1,0 +1,70 @@
+.chart{
+  height: 80vh;
+  border: 1px solid $border;
+  background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+  //overflow: hidden;
+  position: relative;
+
+
+
+  &__clouds-bg{
+    background-image: url("/assets/img/clouds_bg.svg");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .container-lg-x{
+        height: 80vh;
+      .container-sm{
+        text-align: center;
+      }
+    }
+
+    &-line{
+      object-fit: cover;
+      position: absolute;
+      bottom: 0;
+    }
+
+  }
+  &__description{
+    padding: 92px 0 16px ;
+    font-weight: $font-weight-medium;
+    font-size: $font-x-sm;
+    line-height: 11px;
+    color: $accent-color-text;
+  }
+  &__title{
+    font-family: $font-quicksand;
+    color: $accent-color-text;
+    font-weight:$font-weight-medium;
+    font-size: 48px;
+    &-span{
+      font-size: 48px;
+      font-weight: $font-weight-light ;
+    }
+  }
+  &__description-text{}
+  &__button-play {
+    width: 52px;
+    height: 52px;
+    background: $white;
+    border-radius: 50%;
+    box-shadow: 0 10px 50px rgba(201, 209, 231, 0.6);
+
+    &:active {
+      box-shadow: 0 10px 50px $secondary-accent-color;
+    }
+    &:hover{
+      transition: .4s;
+      scale: 1.1;
+      //box-shadow: 0 10px 50px $accent-color;
+
+    }
+
+//---
+  }
+  //---
+  }
+
+

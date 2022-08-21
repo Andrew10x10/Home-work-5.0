@@ -1,5 +1,8 @@
+$container-lg-x-width: 1255px;
 $container-lg-width: 1235px;
+
 $container-md-width: 920px;
+$container-sm-width:611px;
 
 
 
@@ -8,7 +11,9 @@ $font-quicksand:'Quicksand', sans-serif;
 
 $font-md: 15px;
 $font-sm: 12px;
+$font-x-sm:10px;
 
+$font-weight-light:300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
@@ -23,6 +28,11 @@ $box-shadow-1: #c5c5c5;
 
 $accent-color: #8D96BD;
 $secondary-accent-color: #5E81FE;
-$header-border-bottom: #D8E3FE;
+$border: #D8E3FE;
+$active-color: #D8E3FE;
+$white: #fff;
+$accent-color-text: #3D4F9F;
+
 
 $button-bg-1: #D2E1FF;
+$button-bg-2: #4C85FF;
