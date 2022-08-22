@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+  .container-x-lg {
+    max-width: 576px;
+  }
+  .chart__description {
+    padding-top: 50px;
+  }
+  .chart__title{
+
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .chart__description-text {
+    padding-bottom: 15px;
+  }
+  .chart__clouds-bg-line {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .container-x-lg{
+    max-width: 400px;
+  }
+  .chart{
+    height: 70vh;
+    &__description {
+      padding-top: 30px;
+    }
+    &__title {
+      font-size: 35px;
+    }
+    &__description-text {
+      width: 300px;
+    }
+  }
+
+}

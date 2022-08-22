@@ -3,25 +3,25 @@ body{
   font-weight: $font-weight-regular;
   font-size: $font-md;
 }
-.container-lg,
-.container-md,
-.container-lg-x,
-.container-sm{
+.container-first,
+.container-third,
+.container-second,
+.container-second-wrap{
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 }
-.container-lg{
-  max-width: $container-lg-width;
+.container-first{
+  max-width: $container-first;
 }
-.container-lg-x{
-  max-width: $container-lg-x-width;
+.container-second{
+  max-width: $container-second;
 }
-.container-md{
-  max-width: $container-md-width;
+.container-third{
+  max-width: $container-third;
 }
-.container-sm{
-  max-width: $container-sm-width;
+.container-second-wrap{
+  max-width: $container-second-wrap;
 }
 .row{
   display: flex;
@@ -53,5 +53,4 @@ a{
 }
 .flex-direction-colum{
   flex-direction: column;
-  gap: 10px;
 }

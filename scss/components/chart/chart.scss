@@ -13,10 +13,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    .container-lg-x{
+    .container-x-lg{
         height: 80vh;
       .container-sm{
         text-align: center;
+        height: 80vh;
       }
     }
 
@@ -24,6 +25,32 @@
       object-fit: cover;
       position: absolute;
       bottom: 0;
+
+      &-buttons{
+        display: flex;
+        justify-content: center;
+        bottom: 28px;
+        position: absolute;
+        //left: 0;
+        //right: 0;
+        z-index: 14;
+        button{
+
+          width: 12px;
+          height: 12px;
+          border-radius: 10px;
+          background: #D1D6E3;
+          border: unset;
+          margin: 4px 6px;
+          &:hover{
+            background: #5283FF;
+          }
+          &:active{
+            transform:scale(1.2);
+          }
+        }
+
+      }
     }
 
   }
@@ -39,18 +66,27 @@
     color: $accent-color-text;
     font-weight:$font-weight-medium;
     font-size: 48px;
+    padding-bottom: 28px;
     &-span{
       font-size: 48px;
       font-weight: $font-weight-light ;
     }
   }
-  &__description-text{}
+  &__description-text{
+    padding-bottom: 20px;
+    font-size: $font-md;
+    font-weight: $font-weight-regular;
+    line-height: 29px;
+    width: 502px;
+    color:#8D96BD;
+  }
   &__button-play {
     width: 52px;
     height: 52px;
     background: $white;
     border-radius: 50%;
     box-shadow: 0 10px 50px rgba(201, 209, 231, 0.6);
+    z-index: 13;
 
     &:active {
       box-shadow: 0 10px 50px $secondary-accent-color;
@@ -58,13 +94,48 @@
     &:hover{
       transition: .4s;
       scale: 1.1;
-      //box-shadow: 0 10px 50px $accent-color;
-
     }
 
-//---
   }
-  //---
+  &__points {
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    &-dot{
+      width: 15px;
+      height: 15px;
+      border-radius: 20px;
+      border: 2px solid #5E80FE;
+      background: #ffffff;
+      box-shadow: 0 0 15px rgba(82, 131, 255, 0.25);
+      &:hover:after {
+        content: url("/assets/img/Group 74.svg");
+        position: absolute;
+        top: -110px;
+        left: -70px;
+      }
+    }
+    .one {
+      position: absolute;
+      left: 10%;
+      bottom: 8%
+    }
+    .two {
+      position: absolute;
+      left: 34%;
+      bottom: 15%;
+    }
+    .three {
+      position: absolute;
+      left: 62%;
+      bottom: 58%;
+    }
+    .four {
+      position: absolute;
+      right: 12%;
+      top: 16%;
+    }
   }
 
 
+  }
