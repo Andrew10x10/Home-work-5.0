@@ -1,16 +1,22 @@
 @media (max-width: 767px) {
-  .container-x-lg {
+  .container-second-wrap{
     max-width: 576px;
   }
   .chart__description {
     padding-top: 50px;
   }
   .chart__title{
-
+    line-height: 40px;
+    text-align: center;
     font-size: 40px;
     padding-bottom: 20px;
+
+    &-span{
+      font-size: 40px;
+    }
   }
   .chart__description-text {
+    text-align: center;
     padding-bottom: 15px;
   }
   .chart__clouds-bg-line {
@@ -18,7 +24,7 @@
   }
 }
 @media (max-width: 576px) {
-  .container-x-lg{
+  .container-second-wrap{
     max-width: 400px;
   }
   .chart{

@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+  .container-third {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .container-third {
+    max-width: 576px;
+  }
+  .partners{ padding: 35px 0;
+    &__icons{
+    flex-wrap: wrap;
+
+    a{
+      padding: 5px 10px;
+    }
+  }
+  }
+}

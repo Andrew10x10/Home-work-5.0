@@ -2,4 +2,39 @@
   width: 100vw;
   height: 776px;
   background-color: #F5F8FF;
+  position: relative;
+
+  &__info{
+    width: 50%;
+    padding-top: 208px;
+  }
+  &__picture{
+    padding-top: 170px;
+    position: absolute;
+    right: 0;
+  }
+  &__description{
+    font-size: $font-x-sm;
+    font-weight: $font-weight-medium;
+    color: $accent-color-text;
+    padding-bottom: 27px;
+  }
+  &__title{
+    font-family: $font-quicksand;
+    font-weight: $font-weight-medium;
+    font-size: 36px;
+    line-height: 45px;
+    color: $accent-color-text;
+    padding-bottom: 27px;
+    &-span{
+      font-weight: $font-weight-regular;
+    }
+  }
+  &__description-text{
+    width: 413px;
+    font-weight: $font-weight-regular;
+    font-size: $font-md;
+    color: #8D96BD;
+
+  }
 }
