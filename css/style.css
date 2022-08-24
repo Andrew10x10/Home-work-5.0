@@ -125,7 +125,6 @@ select {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 15px;
 }
 
 .container-first,
@@ -273,6 +272,7 @@ a {
   background-color: #D2E1FF;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 700;
+  font-size: 13px;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #fff;
 }
 .header__social-cta a:hover {
@@ -283,7 +283,7 @@ a {
   color: #8D96BD;
   text-shadow: none;
   background-color: #D2E1FF;
-  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #fff;
+  box-shadow: none;
 }
 
 .header__media-menu-btn {
@@ -494,6 +494,14 @@ a {
   top: 16%;
 }
 
+@media (max-width: 991px) {
+  .container-second-wrap {
+    max-width: 768px;
+  }
+  .chart {
+    height: 60vh;
+  }
+}
 @media (max-width: 767px) {
   .container-second-wrap {
     max-width: 576px;
@@ -504,11 +512,11 @@ a {
   .chart__title {
     line-height: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     padding-bottom: 20px;
   }
   .chart__title-span {
-    font-size: 40px;
+    font-size: 36px;
   }
   .chart__description-text {
     text-align: center;
@@ -522,14 +530,8 @@ a {
   .container-second-wrap {
     max-width: 400px;
   }
-  .chart {
-    height: 70vh;
-  }
   .chart__description {
     padding-top: 30px;
-  }
-  .chart__title {
-    font-size: 35px;
   }
   .chart__description-text {
     width: 300px;
@@ -631,6 +633,101 @@ a {
   font-weight: 400;
   font-size: 15px;
   color: #8D96BD;
+  padding-bottom: 60px;
+}
+.plan-manage__first-button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  background: #4C85FF;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+  width: 131px;
+  height: 43px;
+  border: 1px solid #D1D1E4;
+  font-size: 13px;
+}
+.plan-manage__first-button span svg path {
+  fill: #fff;
+}
+.plan-manage__first-button:hover {
+  background-color: transparent;
+  color: #ADB4D2;
+}
+.plan-manage__first-button:hover span svg path {
+  fill: #ADB4D2;
+}
+.plan-manage__first-button:active {
+  box-shadow: none;
+}
+.plan-manage__second-button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  border: 1px solid #D1D1E4;
+  background-color: transparent;
+  color: #ADB4D2;
+  font-size: 13px;
+  width: 131px;
+  height: 43px;
+}
+.plan-manage__second-button:hover {
+  box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+}
+.plan-manage__second-button:active {
+  box-shadow: none;
+}
+
+@media (max-width: 1399px) {
+  .container-third {
+    max-width: 918px;
+  }
+  .plan-manage {
+    height: 550px;
+  }
+  .plan-manage__info {
+    padding-top: 95px;
+    align-items: center;
+  }
+  .plan-manage__picture {
+    width: 50%;
+    padding-top: 65px;
+  }
+  .plan-manage__description-text {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .container-third {
+    max-width: 992px;
+  }
+}
+@media (max-width: 991px) {
+  .container-third {
+    max-width: 768px;
+  }
+  .plan-manage__picture {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .container-third {
+    max-width: 576px;
+  }
+  .plan-manage__info {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+  .plan-manage__picture {
+    width: 60%;
+    padding-top: 60%;
+    left: 18%;
+  }
+  .plan-manage__media {
+    justify-content: center;
+  }
+  .plan-manage__buttons {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

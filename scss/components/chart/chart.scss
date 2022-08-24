@@ -57,7 +57,7 @@
   &__description{
     padding: 92px 0 16px ;
     font-weight: $font-weight-medium;
-    font-size: $font-x-sm;
+    font-size: $font-x-xxx-small;
     line-height: 11px;
     color: $accent-color-text;
   }
@@ -65,16 +65,16 @@
     font-family: $font-quicksand;
     color: $accent-color-text;
     font-weight:$font-weight-medium;
-    font-size: 48px;
+    font-size: $font-xxx-large;
     padding-bottom: 28px;
     &-span{
-      font-size: 48px;
+      font-size: $font-xxx-large;
       font-weight: $font-weight-light ;
     }
   }
   &__description-text{
     padding-bottom: 20px;
-    font-size: $font-md;
+    font-size: $font-medium;
     font-weight: $font-weight-regular;
     line-height: 29px;
     width: 502px;

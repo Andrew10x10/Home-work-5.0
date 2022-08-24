@@ -1,7 +1,6 @@
 body{
   font-family: $main-font;
   font-weight: $font-weight-regular;
-  font-size: $font-md;
 }
 .container-first,
 .container-third,
@@ -23,6 +22,9 @@ body{
 .container-second-wrap{
   max-width: $container-second-wrap;
 }
+//.container-fourth{
+//  max-width:$container-fourth;
+//}
 .row{
   display: flex;
   align-items: center;

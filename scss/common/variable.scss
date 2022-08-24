@@ -2,6 +2,7 @@ $container-second: 1255px;
 $container-first: 1235px;
 
 $container-third: 918px;
+//$container-fourth:443px;
 $container-second-wrap:611px;
 
 
@@ -9,9 +10,16 @@ $container-second-wrap:611px;
 $main-font:'Roboto', sans-serif;
 $font-quicksand:'Quicksand', sans-serif;
 
-$font-md: 15px;
-$font-sm: 12px;
-$font-x-sm:10px;
+$font-x-xxx-small:10px;
+$font-xxx-small:11px;
+$font-xx-small:12px;
+$font-x-small:13px;
+$font-small:14px;
+$font-medium:15px;
+$font-large:18px;
+$font-x-large:24px;
+$font-xx-large:36px;
+$font-xxx-large:48px;
 
 $font-weight-light:300;
 $font-weight-regular: 400;
@@ -32,9 +40,12 @@ $border: #D8E3FE;
 $active-color: #D8E3FE;
 $white: #fff;
 $accent-color-text: #3D4F9F;
+
 $partners-color:#D6DAE5;
 $partners-color-hover: #5982E7;
 
 
 $button-bg-1: #D2E1FF;
 $button-bg-2: #4C85FF;
+$button-color: #ADB4D2;
+$solid-button: #D1D1E4;

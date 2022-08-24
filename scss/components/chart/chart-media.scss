@@ -1,3 +1,13 @@
+@media (max-width: 991px) {
+  .container-second-wrap {
+    max-width: 768px;
+  }
+  .chart{
+    height: 60vh;
+  }
+
+}
+
 @media (max-width: 767px) {
   .container-second-wrap{
     max-width: 576px;
@@ -8,11 +18,11 @@
   .chart__title{
     line-height: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: $font-xx-large;
     padding-bottom: 20px;
 
     &-span{
-      font-size: 40px;
+      font-size: $font-xx-large;
     }
   }
   .chart__description-text {
@@ -28,13 +38,10 @@
     max-width: 400px;
   }
   .chart{
-    height: 70vh;
     &__description {
       padding-top: 30px;
     }
-    &__title {
-      font-size: 35px;
-    }
+
     &__description-text {
       width: 300px;
     }

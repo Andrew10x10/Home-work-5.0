@@ -1,40 +1,93 @@
-.plan-manage{
+.plan-manage {
   width: 100vw;
   height: 776px;
   background-color: #F5F8FF;
   position: relative;
 
-  &__info{
+  &__info {
     width: 50%;
     padding-top: 208px;
   }
-  &__picture{
+  &__picture {
     padding-top: 170px;
     position: absolute;
     right: 0;
   }
-  &__description{
-    font-size: $font-x-sm;
+  &__description {
+    font-size: $font-x-xxx-small;
     font-weight: $font-weight-medium;
     color: $accent-color-text;
     padding-bottom: 27px;
   }
-  &__title{
+
+  &__title {
     font-family: $font-quicksand;
     font-weight: $font-weight-medium;
-    font-size: 36px;
+    font-size: $font-xx-large;
     line-height: 45px;
     color: $accent-color-text;
     padding-bottom: 27px;
-    &-span{
+
+    &-span {
       font-weight: $font-weight-regular;
     }
   }
-  &__description-text{
+  &__description-text {
     width: 413px;
     font-weight: $font-weight-regular;
-    font-size: $font-md;
+    font-size: $font-medium;
     color: #8D96BD;
-
+    padding-bottom: 60px;
   }
+  &__first-button {
+    font-family: $font-quicksand;
+    font-weight: $font-weight-bold;
+    background: $button-bg-2;
+    color: $white;
+    box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+    width: 131px;
+    height: 43px;
+    border: 1px solid $solid-button;
+    font-size: $font-x-small;
+    span{
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $button-color;
+      span{
+        svg {
+          path {
+            fill: $button-color ;
+          }
+        }
+      }
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+  &__second-button {
+    font-family: $font-quicksand;
+    font-weight: $font-weight-medium;
+    border: 1px solid $solid-button;
+    background-color: transparent;
+    color: $button-color;
+    font-size: $font-x-small;
+    width: 131px;
+    height: 43px;
+
+    &:hover{
+      box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+    }
+    &:active{
+      box-shadow: none;
+    }
+  }
+
 }
