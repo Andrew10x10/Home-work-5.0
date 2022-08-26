@@ -54,10 +54,14 @@
   font-style: normal;
   font-display: swap;
 }
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 ul[class],
@@ -130,7 +134,8 @@ body {
 .container-first,
 .container-third,
 .container-second,
-.container-second-wrap {
+.container-second-wrap,
+.container-fourth {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
@@ -150,6 +155,10 @@ body {
 
 .container-second-wrap {
   max-width: 611px;
+}
+
+.container-fourth {
+  max-width: 1231px;
 }
 
 .row {
@@ -601,6 +610,7 @@ a {
   height: 776px;
   background-color: #F5F8FF;
   position: relative;
+  overflow: hidden;
 }
 .plan-manage__info {
   width: 50%;
@@ -727,6 +737,69 @@ a {
   }
   .plan-manage__buttons {
     justify-content: center;
+  }
+}
+.about-app {
+  height: 885px;
+  padding: 141px 0 171px;
+}
+.about-app__container-background {
+  background: url("/assets/img/clouds.svg") no-repeat;
+  background-size: cover;
+  background-color: #fcfcfc;
+  height: 100%;
+  max-width: 100%;
+}
+.about-app__header {
+  padding: 30px 0 92px;
+}
+.about-app__header-description {
+  font-weight: 500;
+  font-size: 10px;
+  color: #3D4F9F;
+  padding-bottom: 20px;
+}
+.about-app__header-title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3D4F9F;
+}
+.about-app__item {
+  gap: 67px;
+}
+.about-app__item-element {
+  padding: 0 60px;
+  align-items: center;
+  width: 25%;
+}
+.about-app__item-ellipse {
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+  background-color: #F1F5FF;
+  padding: 25px;
+  margin-bottom: 33px;
+}
+.about-app__item-text-description {
+  padding-bottom: 25px;
+  color: #4074F8;
+}
+.about-app__item-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #DFE2EF;
+  line-height: 19px;
+}
+.about-app__elements {
+  text-align: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .about-app__container-background {
+    background-size: auto;
   }
 }
 

@@ -1,11 +1,13 @@
 body{
   font-family: $main-font;
   font-weight: $font-weight-regular;
+
 }
 .container-first,
 .container-third,
 .container-second,
-.container-second-wrap{
+.container-second-wrap,
+.container-fourth{
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
@@ -22,9 +24,9 @@ body{
 .container-second-wrap{
   max-width: $container-second-wrap;
 }
-//.container-fourth{
-//  max-width:$container-fourth;
-//}
+.container-fourth{
+  max-width:$container-fourth;
+}
 .row{
   display: flex;
   align-items: center;

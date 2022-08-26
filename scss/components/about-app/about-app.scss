@@ -1,0 +1,71 @@
+.about-app {
+  height: 885px;
+  padding: 141px 0 171px;
+
+
+  &__container-background {
+    background: url("/assets/img/clouds.svg") no-repeat;
+    background-size: cover;
+    background-color: #fcfcfc;
+    height: 100%;
+    max-width: 100%;
+
+  }
+  &__elements {}
+  &__header {
+    padding: 30px 0 92px;
+
+    &-description {
+      font-weight: $font-weight-medium;
+      font-size: $font-x-xxx-small;
+      color: $accent-color-text;
+      padding-bottom: 20px;
+    }
+
+    &-title {
+      font-family: $font-quicksand;
+      font-weight: $font-weight-medium;
+      font-size: $font-x-large;
+      color: $accent-color-text;
+
+    }
+  }
+
+
+  &__main {
+
+  }
+  &__item {
+    gap: 67px;
+    &-element{
+      padding: 0 60px;
+      align-items: center;
+      width: calc(100% / 4);
+    }
+    &-ellipse{
+      width: 69px;
+      height: 69px;
+      border-radius: 50%;
+      background-color: $ellipse-color;
+      padding:25px;
+      margin-bottom: 33px;
+    }
+    &-text-description{
+      padding-bottom: 25px;
+      color: $accent-text-description;
+    }
+    &-text{
+      font-family: $font-openSans;
+      font-weight: $font-weight-semi-bold;
+      font-size: $font-xxx-small;
+      ;
+      color: $accent-color-item-text;
+      line-height: 19px;
+    }
+  }
+
+  &__elements {
+    text-align: center;
+    flex-direction: column;
+  }
+}
