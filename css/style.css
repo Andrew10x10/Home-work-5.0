@@ -746,34 +746,54 @@ a {
 .about-app__container-background {
   background: url("/assets/img/clouds.svg") no-repeat;
   background-size: cover;
-  background-color: #fcfcfc;
   height: 100%;
   max-width: 100%;
 }
-.about-app__header {
+.about-app__elements {
+  text-align: center;
+  flex-direction: column;
+}
+.about-app__elements-header {
   padding: 30px 0 92px;
 }
-.about-app__header-description {
+.about-app__elements-header-description {
   font-weight: 500;
   font-size: 10px;
   color: #3D4F9F;
   padding-bottom: 20px;
 }
-.about-app__header-title {
+.about-app__elements-header-title {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 24px;
   color: #3D4F9F;
 }
-.about-app__item {
-  gap: 67px;
+.about-app__elements-main {
+  padding-bottom: 92px;
 }
-.about-app__item-element {
+.about-app__elements-main-item {
+  gap: 67px;
+  position: relative;
+}
+.about-app__elements-main-item-element {
   padding: 0 60px;
   align-items: center;
   width: 25%;
 }
-.about-app__item-ellipse {
+.about-app__elements-main-item-element:hover {
+  background-color: #D1D1E4;
+  border-radius: 10px;
+}
+.about-app__elements-main-item-element:hover p, .about-app__elements-main-item-element:hover h4 {
+  color: white;
+}
+.about-app__elements-main-item-element:not(:last-child):after {
+  content: url("/assets/img/Line 2.svg");
+  top: 50%;
+  padding-left: 27%;
+  position: absolute;
+}
+.about-app__elements-main-item-ellipse {
   width: 69px;
   height: 69px;
   border-radius: 50%;
@@ -781,25 +801,116 @@ a {
   padding: 25px;
   margin-bottom: 33px;
 }
-.about-app__item-text-description {
+.about-app__elements-main-item-text-description {
   padding-bottom: 25px;
   color: #4074F8;
 }
-.about-app__item-text {
+.about-app__elements-main-item-text {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 11px;
   color: #DFE2EF;
   line-height: 19px;
 }
-.about-app__elements {
-  text-align: center;
-  flex-direction: column;
+.about-app__elements-footer {
+  position: relative;
+  gap: 16px;
+}
+.about-app__elements-footer-read-cta, .about-app__elements-footer-cta {
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  width: 113px;
+  padding: 13px 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.about-app__elements-footer-read-cta:active, .about-app__elements-footer-cta:active {
+  opacity: 0.75;
+}
+.about-app__elements-footer-read-cta {
+  background: #FFD7D7;
+  color: #D43F3F;
+}
+.about-app__elements-footer-span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #DFE2EF;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+.about-app__elements-footer-span:after, .about-app__elements-footer-span:before {
+  content: "";
+  height: 1px;
+  width: 13px;
+  background-color: #DAE4FE;
+  display: block;
+}
+.about-app__elements-footer-cta {
+  color: #3A79FF;
+  background-color: #D2E1FF;
 }
 
 @media (max-width: 1200px) {
+  .container-fourth {
+    max-width: 1000px;
+  }
   .about-app__container-background {
-    background-size: auto;
+    background-size: cover;
+  }
+  .about-app__elements-main-item-element {
+    padding: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .container-fourth {
+    max-width: 768px;
+  }
+  .about-app {
+    padding: 50px 0 50px;
+    height: 1000px;
+  }
+  .about-app__elements-main-item {
+    flex-wrap: wrap;
+    gap: 93px;
+    justify-content: center;
+  }
+  .about-app__elements-main-item-element:not(:last-child):after {
+    display: none;
+  }
+  .about-app__elements-footer {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .about-app__elements-header {
+    padding-bottom: 40px;
+  }
+  .about-app__elements-main-item {
+    gap: 50px;
+  }
+  .about-app__elements-main-item-element {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
   }
 }
 

@@ -1,71 +1,131 @@
 .about-app {
   height: 885px;
   padding: 141px 0 171px;
-
-
   &__container-background {
     background: url("/assets/img/clouds.svg") no-repeat;
     background-size: cover;
-    background-color: #fcfcfc;
     height: 100%;
     max-width: 100%;
-
   }
-  &__elements {}
-  &__header {
-    padding: 30px 0 92px;
-
-    &-description {
-      font-weight: $font-weight-medium;
-      font-size: $font-x-xxx-small;
-      color: $accent-color-text;
-      padding-bottom: 20px;
-    }
-
-    &-title {
-      font-family: $font-quicksand;
-      font-weight: $font-weight-medium;
-      font-size: $font-x-large;
-      color: $accent-color-text;
-
-    }
-  }
-
-
-  &__main {
-
-  }
-  &__item {
-    gap: 67px;
-    &-element{
-      padding: 0 60px;
-      align-items: center;
-      width: calc(100% / 4);
-    }
-    &-ellipse{
-      width: 69px;
-      height: 69px;
-      border-radius: 50%;
-      background-color: $ellipse-color;
-      padding:25px;
-      margin-bottom: 33px;
-    }
-    &-text-description{
-      padding-bottom: 25px;
-      color: $accent-text-description;
-    }
-    &-text{
-      font-family: $font-openSans;
-      font-weight: $font-weight-semi-bold;
-      font-size: $font-xxx-small;
-      ;
-      color: $accent-color-item-text;
-      line-height: 19px;
-    }
-  }
-
   &__elements {
     text-align: center;
     flex-direction: column;
+    &-header {
+      padding: 30px 0 92px;
+
+      &-description {
+        font-weight: $font-weight-medium;
+        font-size: $font-x-xxx-small;
+        color: $accent-color-text;
+        padding-bottom: 20px;
+      }
+
+      &-title {
+        font-family: $font-quicksand;
+        font-weight: $font-weight-medium;
+        font-size: $font-x-large;
+        color: $accent-color-text;
+
+      }
+    }
+    &-main {
+      padding-bottom: 92px;
+
+      &-item {
+        gap: 67px;
+        position: relative;
+
+        &-element {
+          padding: 0 60px;
+          align-items: center;
+          width: calc(100% / 4);
+
+          &:hover {
+            background-color: $solid-button;
+            border-radius: 10px;
+          }
+
+          &:hover p,
+          &:hover h4 {
+            color: white;
+          }
+
+          &:not(:last-child):after {
+            content: url("/assets/img/Line 2.svg");
+            top: 50%;
+            padding-left: 27%;
+            position: absolute;
+
+          }
+        }
+
+        &-ellipse {
+          width: 69px;
+          height: 69px;
+          border-radius: 50%;
+          background-color: $ellipse-color;
+          padding: 25px;
+          margin-bottom: 33px;
+        }
+
+        &-text-description {
+          padding-bottom: 25px;
+          color: $accent-text-description;
+        }
+
+        &-text {
+          font-family: $font-openSans;
+          font-weight: $font-weight-semi-bold;
+          font-size: $font-xxx-small;
+          color: $accent-color-item-text;
+          line-height: 19px;
+
+        }
+      }
+    }
+    &-footer {
+      position: relative;
+      gap: 16px;
+      &-read-cta,
+      &-cta {
+        font-family: $font-quicksand;
+        font-size: $font-x-small;
+        font-weight: $font-weight-bold;
+        width: 113px;
+        padding: 13px 0;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:active {
+          opacity: 0.75;
+        }
+      }
+      &-read-cta {
+        background: #FFD7D7;
+        color: #D43F3F;
+      }
+      &-span {
+        font-family: $font-openSans;
+        font-size: $font-xxx-small;
+        color: #DFE2EF;
+        display: flex;
+        gap: 17px;
+        align-items: center;
+
+        &:after,
+        &:before {
+          content: '';
+          height: 1px;
+          width: 13px;
+          background-color: #DAE4FE;
+          display: block;
+        }
+      }
+      &-cta {
+        color: #3A79FF;
+        background-color: #D2E1FF;
+      }
+    }
   }
+
 }

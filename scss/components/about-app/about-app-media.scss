@@ -1,5 +1,64 @@
 @media (max-width: 1200px) {
-  .about-app__container-background{
-    background-size:auto;
+  .container-fourth {
+    max-width: 1000px
+  }
+  .about-app {
+    &__container-background {
+      background-size: cover;
+    }
+    &__elements-main-item-element{
+      padding: 0;
+    }
+  }
+}
+@media (max-width: 1000px){
+  .container-fourth{
+    max-width: 768px;
+  }
+  .about-app{
+    padding: 50px 0 50px;
+    height: 1000px;
+    &__elements-main-item{
+      flex-wrap: wrap;
+      gap: 93px;
+      justify-content: center;
+    }
+    &__elements-main-item-element:not(:last-child):after {
+      display: none;
+    }
+    &__elements-footer{
+      flex-direction: column;
+      gap: 5px;
+    }
+    &__elements-header {
+      padding-bottom: 40px;
+    }
+    &__elements-main-item {
+      gap: 50px;
+    }
+    &__elements-main-item-element {
+      width: 50%;
+    }
+  }
+
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
   }
 }
