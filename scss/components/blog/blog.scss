@@ -1,0 +1,123 @@
+.container-six {
+  width: 100%;
+
+}
+
+.blog {
+  background-color: #F5F8FF;
+  padding: 5rem 0;
+
+  &__header {
+    &-title {
+      font-weight: $font-weight-medium;
+      font-size: $font-x-xxx-small;
+      color: $accent-color-text;
+      padding: 1.5rem 0 1.25rem;
+    }
+
+    &-description {
+      font-family: $font-quicksand;
+      font-size: $font-x-large;
+      font-weight: $font-weight-medium;
+      padding-bottom: 5.75rem;
+      color: $accent-color-text;
+    }
+  }
+
+  &__main {
+    padding: 63px 41px 64px 35px;
+    background-color: $white;
+    //height: 394px;
+    //height: 47vh;
+    width: 59.875em;
+    //width: 68vw;
+    margin: 0 auto;
+    gap: 67px;
+    position: relative;
+
+    &-wrapper{
+      padding: 10px;
+    }
+
+    &-left-side {
+      width: 50%;
+      gap: 13px;
+
+
+      &-big {
+        gap: 13px;
+      }
+
+      &-smalls {
+        gap: 13px;
+      }
+    }
+
+    &-right-side {
+      width: 50%;
+
+      &-title {
+        font-family: $font-quicksand;
+        font-weight: $font-weight-regular;
+        font-size: $font-xx-large;
+        color: $accent-color-text;
+        padding-bottom: 45px;
+        text-align: left;
+      }
+
+      &-text {
+        font-weight: $font-weight-regular;
+        font-size: $font-small;
+        width: 400px;
+        color: #8D96BD;
+        letter-spacing: 0.03em;
+        padding-bottom: 31px;
+      }
+
+      &-buttons {
+        gap: 8px;
+
+        &-1 {
+          padding: 12px 16px;
+          background: $button-bg-1;
+          color: $blog__button-text-color;
+          border: 1px solid $button-bg-1;
+
+          &:hover {
+            background: transparent;
+            color: $button-blog;
+          }
+        }
+
+        &-2 {
+          padding: 12px 16px;
+          color: $button-blog;
+
+          &:hover {
+            border: 1px solid $button-bg-1;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__footer {
+    padding-top: 100px;
+
+    &-button {
+      width: 12px;
+      height: 12px;
+      border-radius: 10px;
+      background: #D1D6E3;
+      border: unset;
+      margin: 4px 6px;
+      cursor: pointer;
+
+      &:hover{
+        background: #5283FF ;
+      }
+    }
+  }
+}
+

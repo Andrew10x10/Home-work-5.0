@@ -9,7 +9,6 @@
     &-logo {
       $logo-dimension: 26px;
       $logo-dimension-hover: 27px;
-
       a {
         display: inline-block;
         width: $logo-dimension;
@@ -65,7 +64,6 @@
       transition: .9s;
 
     }
-
     &:hover::after {
       transform: scaleX(1);
       transform-origin: left;

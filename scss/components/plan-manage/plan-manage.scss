@@ -14,6 +14,12 @@
     padding-top: 170px;
     position: absolute;
     right: 0;
+    perspective: 1500px;
+    transform-style: preserve-3d;
+    perspective-origin: 1px;
+    &-img{
+      transform: rotateY(-35deg) rotateX(15deg);
+    }
   }
   &__description {
     font-size: $font-x-xxx-small;

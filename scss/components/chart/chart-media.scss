@@ -1,4 +1,9 @@
-@media (max-width: 991px) {
+@media (min-width: 1450px) {
+  .chart {
+    height: 40vh;
+  }
+}
+    @media (max-width: 991px) {
   .container-second-wrap {
     max-width: 768px;
   }

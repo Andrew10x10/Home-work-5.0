@@ -7,7 +7,9 @@ body{
 .container-third,
 .container-second,
 .container-second-wrap,
-.container-fourth{
+.container-fourth,
+.container-five,
+.container-six{
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
@@ -26,6 +28,12 @@ body{
 }
 .container-fourth{
   max-width:$container-fourth;
+}
+.container-five{
+  max-width: $container-five;
+}
+.container-six{
+  max-width: $container-six;
 }
 .row{
   display: flex;
