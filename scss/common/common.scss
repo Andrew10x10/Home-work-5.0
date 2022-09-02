@@ -3,6 +3,7 @@ body{
   font-weight: $font-weight-regular;
 
 }
+.container,
 .container-first,
 .container-third,
 .container-second,
@@ -13,6 +14,9 @@ body{
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
+}
+.container{
+  max-width: $container;
 }
 .container-first{
   max-width: $container-first;

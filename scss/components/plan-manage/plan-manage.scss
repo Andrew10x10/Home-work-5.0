@@ -1,24 +1,24 @@
 .plan-manage {
+  padding: 170px 0;
   width: 100vw;
-  height: 776px;
   background-color: #F5F8FF;
-  position: relative;
   overflow: hidden;
 
 
   &__info {
     width: 50%;
-    padding-top: 208px;
+    padding: 38px 0 46px;
   }
   &__picture {
-    padding-top: 170px;
-    position: absolute;
-    right: 0;
+    //position: relative;
     perspective: 1500px;
+    //width: 50%;
     transform-style: preserve-3d;
     perspective-origin: 1px;
     &-img{
-      transform: rotateY(-35deg) rotateX(15deg);
+      //position: absolute;
+      min-width: 650px;
+      transform: rotateY(-45deg) rotateX(10deg);
     }
   }
   &__description {

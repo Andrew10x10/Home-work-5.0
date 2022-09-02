@@ -1,0 +1,103 @@
+.customers {
+  padding: 109px 0;
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+  transition: 3s;
+  &__wrapper {
+    width: 74%;
+    margin: 0 auto;
+  }
+
+  &__left-side {
+    width: 50%;
+
+    &-title {
+      font-weight: $font-weight-medium;
+      font-size: $font-x-xxx-small;
+      line-height: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $accent-color-text;
+      padding: 37px 0 31px;
+    }
+
+    &-description {
+      font-family: $font-quicksand;
+      font-weight: $font-weight-medium;
+      font-size: $font-xx-large;
+      line-height: 45px;
+      color: $accent-color-text;
+      padding-bottom: 14px;
+    }
+
+    &-description-text {
+      font-family: $font-openSans;
+      font-weight: $font-weight-semi-bold;
+      font-size: $font-xxx-small;
+      line-height: 23px;
+      letter-spacing: 0.03em;
+      color: $color-text;
+      width: 60%;
+      padding-bottom: 68px;
+    }
+  }
+
+  &__right-side {
+    width: 50%;
+
+    &-top {
+      .background {
+        background: linear-gradient(
+        225deg,#d5d5d5,#fefefe);
+        padding: 40px 71px 50px 69px;
+        position: relative;
+        box-shadow: -5px 5px 10px #c0c0c0, 5px -5px 10px #fff;
+        border-radius: 40px;
+
+
+        &:after {
+          content: url("/assets/img/photo-head.svg");
+          display: block;
+          position: absolute;
+          bottom: -25%;
+          left: 45%;
+        }
+      }
+
+      &-text {
+        font-size: $font-small;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $color-comment-text;
+      }
+    }
+
+    &-bottom {
+      padding-top: 78px;
+
+    }
+  }
+
+  .buttons-small-dot,
+  .buttons-small-dot-active {
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background: #D1D6E3;
+    border: unset;
+    margin: 0 6px;
+    padding: 0;
+
+    &:hover {
+      background: #5283FF;
+    }
+
+    &:active {
+      background: #5283FF;
+    }
+  }
+
+  .buttons-small-dot-active {
+    background-color: #3A79FF;
+  }
+
+}
