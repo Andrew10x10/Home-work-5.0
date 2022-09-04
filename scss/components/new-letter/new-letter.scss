@@ -1,0 +1,32 @@
+.new-letter {
+  padding: 118px 0 119px;
+  background: #FCFDFF;
+
+  &__info {
+  }
+  &__title {
+    font-family: $font-quicksand;
+    font-weight: $font-weight-bold;
+    font-size: $font-large;
+    color: $accent-color-text;
+    line-height: 22.5px;
+    padding-bottom: 18px;
+  }
+  &__description{
+    color: $accent-color;
+    width: 60.5%
+
+  }
+  form{
+
+
+  }
+  input{
+    font-family: $font-quicksand;
+    font-weight: $font-weight-bold;
+    font-size: $font-xx-small;
+    padding: 21px 0 21px 23px;
+  }
+
+
+}
