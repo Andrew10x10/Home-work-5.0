@@ -1462,5 +1462,88 @@ a {
     position: absolute;
   }
 }
+.get-started {
+  padding: 72px 0 52px;
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+.get-started .background {
+  background: url("/assets/img/big-blue-clouds.svg");
+}
+.get-started__description {
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 16px;
+}
+.get-started__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  padding-bottom: 28px;
+}
+.get-started__title-span {
+  font-weight: 500;
+}
+.get-started__description-text {
+  width: 59%;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  padding-bottom: 28px;
+  text-align: center;
+}
+.get-started__buttons {
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+}
+.get-started__first-button {
+  font-weight: 700;
+  padding: 13px 17px;
+  color: #565F82;
+  background: #fff;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #A0B4FF;
+}
+.get-started__first-button:active {
+  background: transparent;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+}
+.get-started__second-button {
+  padding: 13px 8px;
+  color: #C7D3FF;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #A0B4FF;
+  background: transparent;
+}
+.get-started__second-button:active {
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(188, 199, 255, 0.75);
+}
+
+.new-letter {
+  padding: 118px 0 119px;
+  background: #FCFDFF;
+}
+.new-letter__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3D4F9F;
+  line-height: 22.5px;
+  padding-bottom: 18px;
+}
+.new-letter__description {
+  color: #8D96BD;
+  width: 60.5%;
+}
+.new-letter input {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 21px 0 21px 23px;
+}
 
 /*# sourceMappingURL=style.css.map */
