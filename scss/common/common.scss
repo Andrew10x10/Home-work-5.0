@@ -1,8 +1,9 @@
-body{
+body {
   font-family: $main-font;
   font-weight: $font-weight-regular;
 
 }
+
 .container,
 .container-first,
 .container-third,
@@ -10,63 +11,85 @@ body{
 .container-second-wrap,
 .container-fourth,
 .container-five,
-.container-six{
+.container-six,
+.new-letter__container {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 }
-.container{
+
+.container {
   max-width: $container;
 }
-.container-first{
+
+.container-first {
   max-width: $container-first;
 }
-.container-second{
+
+.container-second {
   max-width: $container-second;
 }
-.container-third{
+
+.container-third {
   max-width: $container-third;
 }
-.container-second-wrap{
+
+.container-second-wrap {
   max-width: $container-second-wrap;
 }
-.container-fourth{
-  max-width:$container-fourth;
+
+.container-fourth {
+  max-width: $container-fourth;
 }
-.container-five{
+
+.container-five {
   max-width: $container-five;
 }
-.container-six{
+
+.container-six {
   max-width: $container-six;
 }
-.row{
+
+.new-letter__container {
+  max-width: $new-letter__container;
+}
+
+.row {
   display: flex;
   align-items: center;
 }
-.col{
+
+.col {
   width: 100%;
 }
-.d-flex{
+
+.d-flex {
   display: flex;
 }
-a{
+
+a {
   color: $accent-color;
   text-decoration: none;
 }
-.unstyled{
+
+.unstyled {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.justify-content-end{
+
+.justify-content-end {
   justify-content: flex-end;
 }
-.justify-content-center{
+
+.justify-content-center {
   justify-content: center;
 }
-.align-items-center{
+
+.align-items-center {
   align-items: center;
 }
-.flex-direction-colum{
+
+.flex-direction-colum {
   flex-direction: column;
 }

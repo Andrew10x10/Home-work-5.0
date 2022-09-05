@@ -2,8 +2,14 @@
   padding: 118px 0 119px;
   background: #FCFDFF;
 
+  //&__container {
+  //  width: 73.549%;
+  //}
+
   &__info {
+    width: 45%;
   }
+
   &__title {
     font-family: $font-quicksand;
     font-weight: $font-weight-bold;
@@ -12,21 +18,48 @@
     line-height: 22.5px;
     padding-bottom: 18px;
   }
-  &__description{
+
+  &__description {
     color: $accent-color;
-    width: 60.5%
-
-  }
-  form{
-
-
-  }
-  input{
-    font-family: $font-quicksand;
-    font-weight: $font-weight-bold;
-    font-size: $font-xx-small;
-    padding: 21px 0 21px 23px;
+    width: 83%;
   }
 
+  &__form {
+    width: 55%;
+    gap: 14px;
 
+    &-email {
+      width: 62.13%;
+
+      &-ue {
+        width: 100%;
+        padding: 21px 0 21px 23px;
+        font-family: $font-quicksand;
+        font-weight: $font-weight-bold;
+        font-size: $font-xx-small;
+        color: #7A85AD;
+        background: #EFEFF7;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+
+    &-button {
+      width: 39.714%;
+
+      &-save {
+        width: 100%;
+        background: #4D6CE1;
+        box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        font-family: $font-quicksand;
+        font-weight: $font-weight-bold;
+        font-size: $font-x-small;
+        line-height: 16px;
+        padding: 21px 61px;
+      }
+    }
+  }
 }

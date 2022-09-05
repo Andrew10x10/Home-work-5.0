@@ -1,0 +1,135 @@
+.footer {
+  padding: 93px 0;
+  font-family: $font-quicksand;
+  font-size: $font-xx-small;
+
+  &__navigation {
+    gap: 73px;
+
+    &-logo {
+      $logo-dimension: 26px;
+      $logo-dimension-hover: 27px;
+
+      a {
+        display: inline-block;
+        width: $logo-dimension;
+        height: $logo-dimension;
+        background-color: $secondary-accent-color;
+        border-radius: 50%;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+
+        &:hover {
+          width: $logo-dimension-hover;
+          height: $logo-dimension-hover;
+          box-shadow: 10px 5px 5px $accent-color;
+          transform: scale(1.3);
+          transition: .9s;
+          top: -10px;
+        }
+      }
+    }
+
+    nav {
+      ul {
+        gap: 42px;
+
+      }
+
+      a {
+        &:hover {
+          color: $secondary-accent-color;
+          font-weight: $font-weight-bold;
+        }
+
+        &:active {
+          color: $active-color;
+        }
+      }
+    }
+
+    &-logo,
+    &-link {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background-color: $secondary-accent-color;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: .9s;
+
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+
+  &__social {
+    gap: 44px;
+
+    &-icons {
+      a {
+        width: 18px;
+        height: 17px;
+
+        &:hover {
+          color: #5E81FE;
+          box-shadow: 7px -7px 14px 4px $border;
+        }
+
+        &:active {
+          color: $active-color;
+        }
+      }
+
+      ul {
+        gap: 38px;
+      }
+
+    }
+
+    &-cta {
+      a {
+        display: inline-block;
+        border-radius: 2px;
+        padding: 13px 21px;
+        color: #3A79FF;
+        background-color: $button-bg-1;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: $font-weight-bold;
+        font-size: $font-x-small;
+        box-shadow: 6px 6px 12px $box-shadow-1,
+        -6px -6px 12px $white;
+
+
+        &:hover {
+          color: $white;
+          background-color: $button-bg-2;
+
+        }
+
+        &:active {
+          color: $accent-color;
+          text-shadow: none;
+          background-color: $button-bg-1;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &__info {
+    color: $accent-color;
+    padding: 42px 0 0 100px;
+  }
+}
