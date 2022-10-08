@@ -1,1 +1,1 @@
-landing
+The layout was interesting. One of my initial works in which I used the knowledge of scss in practice, media queries. A lot of hover effects were used. Practiced work with SVG. Superficially studied the animation of objects
